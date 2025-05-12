@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TESTS } from '../../data/TESTS';
+import { Link } from 'react-router-dom';
 
 const ResultThumbnailList = ({ testParam }) => {
   const [testList, setTestLis] = useState(TESTS);
@@ -8,7 +9,7 @@ const ResultThumbnailList = ({ testParam }) => {
       {testList
         .filter((test) => test?.info?.mainUrl !== testParam)
         .map((item) => (
-          <Link to={`/${item?.info?.mainUrl}`} key={`/${item?.info?.mainUrl}`}>
+          <Link to={`/${item?.info?.mainUrl}`} key={`${item?.info?.mainUrl}`}>
             <img
               style={{ width: '100%' }}
               src={item?.info?.thumbImage}

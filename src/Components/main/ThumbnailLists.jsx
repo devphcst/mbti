@@ -10,6 +10,7 @@ const ThumbnailLists = () => {
   useEffect(() => {
     const currentLanguage = searchParams.get('lang') || 'Kor';
     const currentCategory = searchParams.get('cat');
+
     if (currentCategory) {
       const filteredTests = TESTS.filter(
         (test) =>
