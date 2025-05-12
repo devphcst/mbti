@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import styles from './category.module.css';
 
 const CatogoryBtns = () => {
   const navigate = useNavigate();
@@ -25,9 +26,22 @@ const CatogoryBtns = () => {
   return (
     <div>
       {/* ulr.com | url.com/?lang=Eng */}
-      <button onClick={() => onCategoryButtonClick('all')}>ALL</button>
-      <button onClick={() => onCategoryButtonClick('love')}>연애</button>
-      <button onClick={() => onCategoryButtonClick('characteristic')}>
+      <button
+        className={styles.categoryButton}
+        onClick={() => onCategoryButtonClick('all')}
+      >
+        ALL
+      </button>
+      <button
+        className={styles.categoryButton}
+        onClick={() => onCategoryButtonClick('love')}
+      >
+        연애
+      </button>
+      <button
+        className={styles.categoryButton}
+        onClick={() => onCategoryButtonClick('characteristic')}
+      >
         성격
       </button>
     </div>
