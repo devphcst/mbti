@@ -61,46 +61,8 @@ const Quiz = ({ setMode, questions, mbtiScore, setMbtiScore }) => {
             strokeColor='blue'
             showInfo={false}
           />
-          {/* <Progress
-            percent={10}
-            percentPosition={{ align: 'center', type: 'inner' }}
-            size={[300, 20]}
-          />
-          <Progress
-            percent={50}
-            percentPosition={{ align: 'start', type: 'inner' }}
-            size={[300, 20]}
-            strokeColor='#B7EB8F'
-          />
-          <Progress
-            percent={60}
-            percentPosition={{ align: 'end', type: 'inner' }}
-            size={[300, 20]}
-            strokeColor='#001342'
-          />
-          <Progress
-            percent={100}
-            percentPosition={{ align: 'center', type: 'inner' }}
-            size={[400, 20]}
-          />
-          <Progress
-            percent={60}
-            percentPosition={{ align: 'start', type: 'outer' }}
-          /> */}
-          {/* <Progress
-            percent={100}
-            percentPosition={{ align: 'start', type: 'outer' }}
-          />
-          <Progress
-            percent={60}
-            percentPosition={{ align: 'center', type: 'outer' }}
-            size='small'
-          />
-          <Progress
-            percent={100}
-            percentPosition={{ align: 'center', type: 'outer' }}
-          /> */}
         </Flex>
+        <h4>{questionNum} / 12</h4>
       </div>
     </div>
   );

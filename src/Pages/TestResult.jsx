@@ -45,7 +45,11 @@ const TestResult = () => {
           renderTestInfo={renderTestInfo}
         />
       )}
-      <ResultButtonGroup />
+      <ResultButtonGroup
+        testParam={testParam}
+        resultParam={resultParam}
+        renderTestInfo={renderTestInfo}
+      />
       <ResultThumbnailList />
     </div>
   );

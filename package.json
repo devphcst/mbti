@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "antd": "^5.25.0",
+    "copy-to-clipboard": "^3.3.3",
     "react": "^19.1.0",
+    "react-circle-flags": "^0.0.23",
     "react-dom": "^19.1.0",
     "react-ga4": "^2.1.0",
     "react-lottie": "^1.2.10",
